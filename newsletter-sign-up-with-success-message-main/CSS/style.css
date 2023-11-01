@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+}   
+.Contain{
+    display: none;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+.start{
+    text-align: center;
+    width: auto;
+}
+.start h1{
+    text-align: left;
+    margin: 3rem 2rem 1rem 1.5rem;
+    color: hsl(235, 18%, 26%);
+}
+.invitation{
+    text-align: left;
+    color: hsl(235, 18%, 26%);
+    margin: 0.5rem 2rem 0.5rem 1.5rem;;
+}
+.offer li::before{
+    content: url(/assets/images/icon-list.svg);
+}
+.list{
+    margin: 0 auto;
+    display: flex;
+    padding: 0.5rem 2rem 0.5rem 1.5rem;
+}
+.list p{
+    font-size: 1rem;
+    color: hsl(235, 18%, 26%);
+    padding-left: 1rem;
+    text-align: left;
+}
+.label {
+    display: block;
+    width: 80%;
+    color: hsl(235, 18%, 26%);
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.emailin {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-indent: 0.5rem;
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 89%;
+    color: white; /* Text color */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.button:hover {
+    background: linear-gradient(90deg, hsl(4, 100%, 67%), hsl(4, 100%, 57%));
+}
+.sub{
+    text-decoration: none;
+    color: white;
+}
+.subcribed{
+    display: none;
+    background-color: white;
+    height: 100vh;
+    padding: 2rem;
+}
+.subcribed img{
+    width: 5rem;
+    margin: 10rem 1.5rem 0 1.5rem;
+}
+.subcribed h1{
+    color: hsl(234, 29%, 20%);
+    margin: 1.5rem;
+    font-size: 3.5rem;
+}
+.subcribed p{
+    font-size: 1rem;
+    margin: 1.5rem;
+    color: hsl(234, 29%, 20%);  
+    line-height: 1.2rem;
+}
+.subcribed span{
+    font-weight: bold;
+}
+.Dismis {
+    margin-top: 5rem;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+    .Contain{
+        border-radius: 1rem;
+        flex-direction: row-reverse;
+        width: 750px;
+        margin: 5rem auto;
+        text-align: center;
+    }
+    .Contain img{
+        width: 300px;
+        padding: 1rem;
+        content: url(/assets/images/illustration-sign-up-desktop.svg);
+    }
+    .start{
+        width: 70%;
+    }
+    .subcribed{
+        border-radius: 1rem;
+        margin: 3rem auto;
+        width: 425px;
+        height: auto;
+        padding: 2rem;
+    }
+    .subcribed img{
+        width: 4rem;
+        margin: 0.5rem 1.5rem 0 1.5rem;
+    }
+    .subcribed h1{
+        color: hsl(234, 29%, 20%);
+        margin: 1.5rem;
+        font-size: 3rem;
+    }
+    .Dismis{
+        margin-top: 2rem;
+    }
+    .Dismis {
+        text-decoration: none;
+        color: white;
+    }
+}
